@@ -32,7 +32,7 @@ class TicTacToeGame {
             }
             
             board.checkBingo()
-            if board.isThereNoBingo == false {
+            if !board.isThereNoBingo {
                 isRunning = false
             }
             
@@ -43,7 +43,7 @@ class TicTacToeGame {
             
         }
         
-        if board.isThereNoBingo == false {
+        if !board.isThereNoBingo {
             board.show()
             turn.switchTurn()
             print("\(turn)님이 승리하셨습니다.")
